@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+
+i {
+  font-style: normal; }
+
+html {
+  font-size: 24px;
+  display: flex; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+#top {
+  height: 14vw;
+  background: #0af;
+  display: flex;
+  justify-content: center; }
+  #top section {
+    width: 90vw;
+    overflow: hidden;
+    line-height: 14vw;
+    font-size: 0.62rem;
+    font-weight: 700; }
+    #top section #allmap {
+      background: #0af !important;
+      color: #fff !important; }
+
+#con {
+  overflow-y: scroll;
+  display: flex;
+  background: #0af;
+  flex: 1;
+  flex-direction: column; }
+  #con > a {
+    display: block;
+    text-align: center;
+    width: 90vw;
+    height: 9.6vw;
+    background: #fff;
+    align-self: center;
+    margin: 3vw 0; }
+    #con > a i {
+      line-height: 9.6vw;
+      font-size: 0.52rem; }
+  #con img {
+    width: 100vw; }
+  #con .con_good {
+    background: #fff;
+    font-size: 0.32rem; }
+    #con .con_good .swiper-container {
+      height: 47.2vw; }
+      #con .con_good .swiper-container .swiper-slide {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start; }
+        #con .con_good .swiper-container .swiper-slide a {
+          display: flex;
+          flex-direction: column;
+          width: 20%;
+          justify-content: center; }
+          #con .con_good .swiper-container .swiper-slide a img {
+            width: 12vw;
+            height: 12vw;
+            align-self: center; }
+          #con .con_good .swiper-container .swiper-slide a i {
+            align-self: center; }
+    #con .con_good .icon_m {
+      display: flex;
+      justify-content: center; }
+      #con .con_good .icon_m img {
+        height: 23.7vw;
+        width: 94.6vw; }
+    #con .con_good .good_m {
+      display: flex;
+      justify-content: space-around; }
+      #con .con_good .good_m span {
+        display: block;
+        padding: 3.2vw 0 0 4vw;
+        height: 37.3vw;
+        width: 42%; }
+        #con .con_good .good_m span h2 {
+          font-size: 0.45rem;
+          color: #e81919; }
+        #con .con_good .good_m span p {
+          font-size: 0.34rem;
+          color: #777; }
+        #con .con_good .good_m span p:nth-of-type(2) {
+          font-size: 0.32rem;
+          color: #e81919; }
+          #con .con_good .good_m span p:nth-of-type(2) > i {
+            color: #222;
+            font-weight: 600; }
+      #con .con_good .good_m > span {
+        background: #f4f4f4 url(../img/fpng.webp) right bottom no-repeat;
+        margin-right: 0.8vw;
+        background-size: 80%; }
+    #con .con_good .good_list .pro {
+      text-align: center;
+      line-height: 9.6vw;
+      font-size: 0.4rem;
+      color: #545B62; }
+    #con .con_good .good_list section {
+      width: 100%;
+      padding: 0.3rem 0;
+      border-bottom: 0.42vw solid #333333;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      #con .con_good .good_list section div {
+        display: flex;
+        padding: 0.3vw 0 0.3rem .8rem; }
+        #con .con_good .good_list section div img {
+          margin-right: 0.2rem;
+          width: 17.3vw;
+          height: 17.3vw; }
+        #con .con_good .good_list section div p {
+          font-size: 0.42rem;
+          font-weight: 700; }
+          #con .con_good .good_list section div p span {
+            background: yellow;
+            font-size: 0.30rem;
+            font-weight: 500;
+            padding: 0 0.3rem; }
+
+footer {
+  height: 16vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.26rem;
+  width: 100%;
+  border-top: 0.13vw solid #eee;
+  z-index: 999;
+  background: #fff; }
+  footer a {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    footer a .iconfont {
+      font-weight: 900; }
+
+/*# sourceMappingURL=index.css.map */

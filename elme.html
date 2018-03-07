@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>饿了么</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="css/font/iconfont.css" />
+		<link rel="stylesheet" href="css/swiper-4.1.6.min.css" />
+	</head>
+	<body>
+		<div id="top">
+			<section>
+			<div id="allmap">
+				定位中。。。
+			</div>
+			</section>
+		</div>
+		<div id="con">
+			<a href="#">
+				<i class="iconfont icon-49"> 搜索商家，商品名称</i>
+			</a>
+			<img src="img/bgpng.webp" alt="" />
+			<div class="con_good">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide" id="app1">
+				        	<a href="#" v-for="goods in good" >
+				        		<img v-bind:src="goods.src" alt="" />
+				        		<i>{{goods.type}}</i>
+				        	</a>
+				        </div>
+				        <div class="swiper-slide" id="app2">
+				        	<a href="#" v-for="goods in good">
+				        		<img v-bind:src="goods.src" alt="" />
+				        		<i>{{goods.type}}</i>
+				        	</a>
+				        </div>
+				    </div>
+				    <!--分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+				<div class="icon_m">
+					<img src="img/bpng.webp" alt="" />
+				</div>
+				<div class="good_m">
+					<span>
+						<h2>限量抢购</h2>
+						<p>超值美味9.9元起</p>
+						<p>1228人<i>正在抢></i></p>
+					</span>
+					<span>
+						<h2>限量抢购</h2>
+						<p>超值美味9.9元起</p>
+						<p>1228人<i>正在抢></i></p>
+					</span>
+				</div>
+				<div class="good_list">
+					<div class="pro">
+						—— 推荐商家 ——
+					</div>
+					<section id="app3" >
+						<div v-for="lists in list">
+						<img v-bind:src="lists.src" alt="" />
+							<p><span>品牌</span>{{lists.shop}}</p>
+						</div>
+					</section>
+				</div>
+			
+			</div>
+		</div>
+		
+		
+		<footer>
+			<div>
+				<a href="#" style="color:#0af">
+					<i class="iconfont icon-diannao"></i>
+					<i>首页</i>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<i class="iconfont icon-49"></i>
+					<i>发现</i>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<i class="iconfont icon-ziyuan"></i>
+					<i>订单</i>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<i class="iconfont icon-yonhu"></i>
+					<i>我的</i>
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/swiper-4.1.6.min.js"></script>
+<script src="js/vue.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=134db1b9cf1f1f2b4427210932b34dcb"></script>
