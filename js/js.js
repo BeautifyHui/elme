@@ -4,8 +4,8 @@ window.onload = function(){
 var mySwiper = new Swiper ('.swiper-container', {
     // 分页器
     pagination: {
-      el: '.swiper-pagination',
-      dynamicBullets:true
+//    el: '.swiper-pagination',
+//    dynamicBullets:true
     }
 })
 
