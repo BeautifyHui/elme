@@ -37,13 +37,12 @@ body {
       background: #0af !important;
       color: #fff !important; }
 
-#con {
-  overflow-y: scroll;
-  display: flex;
+#bc {
+  width: 100%;
   background: #0af;
-  flex: 1;
-  flex-direction: column; }
-  #con > a {
+  display: flex;
+  justify-content: center; }
+  #bc .serch {
     display: block;
     text-align: center;
     width: 90vw;
@@ -51,9 +50,16 @@ body {
     background: #fff;
     align-self: center;
     margin: 3vw 0; }
-    #con > a i {
+    #bc .serch i {
       line-height: 9.6vw;
       font-size: 0.52rem; }
+
+#con {
+  overflow-y: scroll;
+  display: flex;
+  background: #0af;
+  flex: 1;
+  flex-direction: column; }
   #con img {
     width: 100vw; }
   #con .con_good {

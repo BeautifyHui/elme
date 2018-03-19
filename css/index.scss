@@ -22,15 +22,18 @@ body{
     
 }
 
-
-#con{
-    overflow-y:scroll;display:flex;background:#0af;flex:1;flex-direction: column;
-    >a{
+#bc{
+    width:100%;background: #0af;display:flex;justify-content: center;
+   .serch{
         display:block;text-align: center;width:90vw;height:9.6vw;background:#fff;align-self: center;margin:3vw 0;
         i{
             line-height: 9.6vw;font-size: 0.52rem;
         }
-    }
+    } 
+}
+#con{
+    overflow-y:scroll;display:flex;background:#0af;flex:1;flex-direction: column;
+    
     img{
         width:100vw;
     }
